@@ -1,0 +1,567 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(166, 157, 157, 0.8);
+    float: left;
+    position: fixed;
+    width: 100%;
+    top: 0;  
+    justify-content: flex-end; 
+    z-index: 1;
+}
+
+.topnav a {
+    float: left ;
+    margin-right: 30px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+}
+.container img{  
+    height: 100%;
+    width: 100%; 
+}
+
+
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:rgb(132, 132, 130); */
+    border-radius: 20px;
+    gap: 10px;
+    padding: 7px;
+    width: 15%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 30px; 
+   
+}
+
+.grid-item-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.grid-item {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-item h4 {
+    margin: 13px 0 9px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.grid-item p {
+    margin: 0 15px 15px;
+    margin-left: 20px;
+    font-size: 1em;
+    color: #666;
+}
+
+.ourprograms {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .ourprograms .tooltiptext {
+    visibility: hidden;
+    width: 125px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 50%; /* Position the tooltip above the text */
+    left: 50%;
+    margin-left: -60px; /* Center the tooltip */
+    opacity: 0; /* Hide the tooltip */
+    transition: opacity 0.3s;
+  }
+  .ourprograms:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+.ourprograms {
+    color: #ddd;
+}
+.ourprograms p{
+    margin: 0 30px 30px;
+    font-size: 1.3em;
+}
+.ourprograms h1{
+    text-align: center;
+    color: black;
+    text-decoration: solid;
+
+}
+.grid-programs-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(3, 1fr);    /* 3 rows */
+    gap: 20px;
+  }
+  
+  .gridprg{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .gridprg h2{
+    color: #333;
+    text-align: center;
+    text-shadow: #ddd;
+
+  }
+  .gridprg img{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .gridprg p{
+    margin: 0 15px 15px;
+    margin-left: 20px;
+    font-size: 1em;
+    text-align: center;
+  }
+ 
+  .grid-programs-container :hover{
+    transform: scale(1.01);
+  }
+#gr1{
+    height: 338px;
+    width: 500px;
+    margin-left: 177px;
+    border-radius: 42px;
+    margin-top: 11px;
+  }
+#gr2{
+    height: 220px;
+    width: 400px;
+    margin-left: 0px;
+    border-radius: 50px;
+    margin-top: 77px;
+}
+#gr3{
+    height: 220px;
+    width: 400px;
+    margin-left: 280px; 
+    margin-right: 0px;
+    border-radius: 50px;
+    margin-top: 77px;
+}
+#gr4{
+    height: 338px;
+    width: 500px;
+    margin-left: 2px;
+    border-radius: 42px;
+    margin-top: 11px;
+  }
+#gr5{
+    height: 338px;
+    width: 500px;
+    margin-left: 177px;
+    border-radius: 42px;
+    margin-top: 11px;
+  }
+#gr6{
+    height: 220px;
+    width: 400px;
+    margin-left: 0px; 
+    border-radius: 50px;
+    margin-top: 77px;
+
+}
+
+.gallery-class{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    gap: 10px;
+    padding: 7px;
+    width: 15%;
+    margin: 0 auto;
+    justify-content: center;
+}
+    
+.gallery{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.gallery-item  {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;   
+}
+
+.gallery::-webkit-scrollbar {
+    height: 0px; /* Hide the horizontal scrollbar */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s, filter 0.3s;
+}
+.gallery-item .gallery-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    filter: blur(4px);
+}
+
+.gallery-item:hover .gallery-text {
+    opacity: 1;
+}
+
+
+.contact-us {
+    margin-top: 20px;
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 100px;
+    padding: 20px;
+}
+
+.col{
+    display:inline-block;
+    gap: 20px;
+    padding: 15px;
+    background-color: rgb(74, 68, 68);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 900px;
+
+}
+
+
+.contact-us h2 {
+    margin-top: 0;
+    color: #f8f5f5;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us label {
+    margin: 10px 0 5px;
+    color: #f2f2f2;
+}
+
+.contact-us input, .contact-us textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 600px;
+}
+
+.contact-us input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+.contact-us input[type="submit"]:hover {
+    background-color: rgb(107, 99, 99);
+    color: #faf2f2;
+    
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    
+}
+#iframe{
+    height: 100%;
+    width: 100%;
+}
+
+/* Media query for screens larger than 768px (tablets and up) */
+/* @media (max-width: 1200px) {
+    .classes, .gallery-class{
+        width: 30%;
+    }
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav a {
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    
+    .gallery-class {
+        width: 60%;
+    }
+
+    .grid-item-container {
+        grid-template-columns: 1fr;
+    }
+
+    .col {
+        width: 100%;
+    }
+} */
+@media(max-width:432px){
+
+    body {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: gray;
+        display: inline-block;
+        width: fit-content;
+    }
+    
+    .topnav {
+        /* overflow: hidden;
+        background-color:#333; */
+        position: relative;  
+    }
+    
+    .topnav a {
+        display: none; /* Hide all links initially */
+        width: 100%;
+        text-align: left;
+        background-color: #333;
+        color: #f2f2f2;
+        
+    }
+    
+    .topnav::before {
+        content: 'Menu';
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        background-color:  gray;;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .topnav:hover a {
+        display: block; /* Show links when hovering over the menu */
+    }
+    
+    .topnav:hover::before {
+        background-color:  gray /* Change menu background when hovering */
+    }
+    .container{
+        width: 100%;
+    }
+    .container img {
+        height: 100%;
+        width: 100%;
+        margin-left: 10px;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        padding-left: 10px;
+        margin-left: 15px;
+    }
+    
+    .gallery-item {
+        width: 100%; /* Adjust width to fit the screen */
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .gallery-item .gallery-text {
+        font-size: 20px; /* Adjust text size for smaller screens */
+    }
+    
+    .grid-item-container{
+        margin-left: 14px;
+    }
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        margin-left: 13px;
+    }
+    
+    .col {
+        width: 100%; /* Full width */
+        gap: 10px;
+        padding: 15px;
+        background-color: rgb(74, 68, 68);
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-us input, .contact-us textarea {
+        width: 80%; /* Full width input fields */
+    }
+    
+    .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        width: 100%;
+    }
+    
+    #gr1, #gr2, #gr3, #gr4, #gr5, #gr6 {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        border-radius: 20px;
+    }
+    
+    .gallery-class, .classes {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .grid-programs-container {
+        display: block;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .gridprg {
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    
+    .gridprg h2 {
+        font-size: 1.5em; /* Adjust heading size */
+        text-align: center;
+    }
+    
+    .gridprg img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .gridprg p {
+        text-align: center;
+    }
+    .grid-programs-container{
+        margin-right: 10px;
+    }
+    
+    .ourprograms h1 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+    
+    .ourprograms p {
+        font-size: 1.1em; /* Adjust paragraph size */
+    }
+    
+    .ourprograms .tooltiptext {
+        width: 100px; /* Adjust tooltip width */
+        font-size: 0.9em; /* Adjust tooltip font size */
+    }
+    
+}
+   
+

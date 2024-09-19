@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics and Visuals Example</title>
+    <style>
+        canvas, svg {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+        svg {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Graphics and Visuals in HTML5</h1>
+
+    <h2>Canvas Example</h2>
+    <canvas id="myCanvas" width="400" height="300"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Draw a rectangle
+        ctx.fillStyle = 'lightblue';
+        ctx.fillRect(50, 50, 200, 100);
+
+        // Draw a circle
+        ctx.beginPath();
+        ctx.arc(300, 150, 50, 0, Math.PI * 2, false);
+        ctx.fillStyle = 'orange';
+        ctx.fill();
+        ctx.strokeStyle = 'black';
+        ctx.stroke();
+    </script>
+
+    <h2>SVG Example</h2>
+    <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+        <!-- Draw a rectangle -->
+        <rect x="50" y="50" width="200" height="100" fill="lightgreen" stroke="black" stroke-width="2" />
+
+        <!-- Draw a circle -->
+        <circle cx="300" cy="150" r="50" fill="purple" stroke="black" stroke-width="2" />
+    </svg>
+
+</body>
+</html>

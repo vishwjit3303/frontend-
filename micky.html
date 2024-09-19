@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mickymouse</title>
+    <style>
+        canvas, svg {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+        svg {
+            max-width: 100%;
+        }
+        body{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: red;">Micky Mouse</h2>
+    <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+      
+         <!-- Head -->
+         <circle cx="400" cy="300" r="60" fill="#ffdbac"/>
+         <!-- Left ear -->
+         <circle cx="320" cy="240" r="40" fill="black"/>
+         <!-- Right ear -->
+         <circle cx="480" cy="240" r="40" fill="black"/>
+
+         <!-- eyes -->
+         <circle cx="380" cy="280" r="10" fill="black"/>
+         <circle cx="420" cy="280" r="10" fill="black"/>
+         <!-- mouth -->
+         <ellipse cx="400" cy="320" rx="20" ry="12" fill="black"/>
+
+        <!-- Draw a circle -->
+        <!-- <circle cx="200" cy="150" r="100" fill="#ffdbac" stroke="black" stroke-width="2" /> -->
+    </svg>
+</body>
+</html>
